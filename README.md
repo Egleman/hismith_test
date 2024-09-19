@@ -1,75 +1,59 @@
-# Nuxt 3 Minimal Starter
+## Запуск проекта
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### Установка
 
-## Setup
+1. Клонируйте репозиторий на ваш локальный компьютер:
 
-Make sure to install the dependencies:
+   ```sh
+   git clone https://github.com/Egleman/hismith_test.git
+   ```
 
-```bash
-# npm
-npm install
+2. Перейдите в папку проекта:
 
-# pnpm
-pnpm install
+   ```sh
+   cd hismith_test
+   ```
 
-# yarn
-yarn install
+### Запуск проекта
 
-# bun
-bun install
-```
+С использованием Docker compose:
 
-## Development Server
+Вставьте в терминал данную команду:
+   ```sh
+   docker compose up --build -d
+   ```
 
-Start the development server on `http://localhost:3000`:
+Проект будет запущен в режиме разработки на `http://localhost:3005`. Откройте этот URL в вашем браузере, чтобы увидеть приложение.
 
-```bash
-# npm
+
+### Запуск без Docker compose
+
+Установите зависимости:
+
+   ```sh
+   npm install
+   ```
+Для запуска проекта в режиме разработки выполните команду:
+
+```sh
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Проект будет запущен на `http://localhost:3000`. Откройте этот URL в вашем браузере, чтобы увидеть приложение.
 
-Build the application for production:
+### Сборка проекта
 
-```bash
-# npm
+Для создания сборки для продакшена выполните команду:
+
+```sh
 npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Созданная сборка будет находиться в папке `.output`.
 
-```bash
-# npm
-npm run preview
+## Зависимости
 
-# pnpm
-pnpm run preview
+- TypeScript
+- Nuxt 3
+- Vite
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

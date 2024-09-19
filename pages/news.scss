@@ -1,0 +1,25 @@
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.filter__wrapper {
+  display: flex;
+  gap: 15px;
+  max-width: 400px;
+  width: 100%;
+}
+.filter__label {
+  padding-top: 17px;
+  white-space: nowrap;
+}
+.processing {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  transform: translate(0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

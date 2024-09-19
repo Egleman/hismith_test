@@ -1,0 +1,17 @@
+version: '2.4'
+networks:
+   hismith_network:
+      driver: bridge
+services:
+   hismith:
+      container_name: hismith
+      build:
+         context: ./
+         dockerfile: ./Dockerfile
+      ports:
+         - '3005:3000'
+      volumes:
+         - ./:/app
+      tty: true
+      networks:
+         - hismith_network
